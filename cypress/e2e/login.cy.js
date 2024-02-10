@@ -1,4 +1,4 @@
-describe('Sign In with n Test Cases', () => {
+describe('Sign In with 5 Test Cases', () => {
   beforeEach(() => {
     cy.visit('/')
   })
