@@ -16,3 +16,17 @@ Cypress.Commands.add('login', (emailAddress, password) => {
     cy.get('#pass').should('be.visible').type(password)
     cy.get('#send2').should('be.visible').click()
 })
+
+Cypress.Commands.add('search', (search) => {
+    cy.get('#search').should('be.visible').clear().type(search).type('{enter}')
+});
+
+Cypress.Commands.add('addToCart', (qty) => {
+    cy.get('#qty').should('be.visible').clear().type(qty).type('{enter}')
+    cy.get('#product-addtocart-button')
+});
+
+
+
+
+
